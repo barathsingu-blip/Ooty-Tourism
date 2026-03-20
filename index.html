@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Ooty Tourism | The Nilgiris</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f8fb;
+}
+
+/* NAVIGATION BAR */
+
+nav{
+position:sticky;
+top:0;
+background:#2c3e50;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+}
+
+.logo{
+color:white;
+font-size:24px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+nav ul li a:hover{
+color:#00ffcc;
+}
+
+/* HERO SECTION */
+
+header{
+height:90vh;
+background-image:url("hero.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+.hero-text{
+background:rgba(0,0,0,0.5);
+padding:40px;
+border-radius:10px;
+}
+
+.hero-text h1{
+font-size:55px;
+}
+
+.hero-text p{
+font-size:22px;
+margin-top:10px;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 80px;
+text-align:center;
+}
+
+section h2{
+font-size:36px;
+margin-bottom:20px;
+color:#2c3e50;
+}
+
+/* ABOUT */
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.7;
+font-size:17px;
+}
+
+/* TOURIST PLACES */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+width:260px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+margin:10px;
+}
+
+.card p{
+padding:0 15px 15px;
+font-size:14px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.gallery img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:8px;
+}
+
+/* MAP */
+
+.map img{
+width:70%;
+margin-top:20px;
+border-radius:10px;
+}
+
+/* HOTELS */
+
+.hotels{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.hotel-card{
+width:260px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.hotel-card img{
+width:100%;
+height:160px;
+}
+
+.hotel-card h3{
+margin:10px;
+}
+
+/* FORMS */
+
+form{
+max-width:500px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+background:#27ae60;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+/* REVIEWS */
+
+.reviews{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.review{
+width:250px;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+
+footer{
+background:#2c3e50;
+color:white;
+padding:25px;
+text-align:center;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<div class="logo">Ooty Tourism
+<img src="logo.png"height="50">
+</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#places">Places</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#map">Map</a></li>
+<li><a href="#hotels">Hotels</a></li>
+<li><a href="#booking">Booking</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<header>
+
+<div class="hero-text">
+<h1>Discover Ooty</h1>
+<p>The Queen of Hill Stations</p>
+</div>
+
+</header>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2>About Ooty</h2>
+
+<p>
+Ooty, also known as Udhagamandalam, is one of the most beautiful hill stations in India.
+Located in the Nilgiri Hills of Tamil Nadu, Ooty is famous for its cool climate,
+lush green tea plantations, lakes, waterfalls, and scenic mountain views.
+</p>
+
+<p>
+Tourists from all over India visit Ooty to experience the peaceful atmosphere,
+ride the famous Nilgiri Mountain Railway toy train, explore botanical gardens,
+and enjoy boating at Ooty Lake.
+</p>
+
+</section>
+
+<!-- TOURIST PLACES -->
+
+<section id="places">
+
+<h2>Top Tourist Attractions</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="ooty-lake.jpg">
+<h3>Ooty Lake</h3>
+<p>A beautiful lake where visitors enjoy boating and scenic views.</p>
+</div>
+
+<div class="card">
+<img src="doddabetta.jpg">
+<h3>Doddabetta Peak</h3>
+<p>The highest mountain peak in the Nilgiris with amazing views.</p>
+</div>
+
+<div class="card">
+<img src="toy-train.jpg">
+<h3>Nilgiri Toy Train</h3>
+<p>A UNESCO heritage railway passing through tunnels and hills.</p>
+</div>
+
+<div class="card">
+<img src="botanical-garden.jpg">
+<h3>Botanical Garden</h3>
+<p>A garden with rare plants, flowers, and beautiful landscapes.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+
+<img src="gallery1.jpg">
+<img src="gallery2.jpg">
+<img src="gallery3.jpg">
+<img src="gallery4.jpg">
+
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section id="map" class="map">
+
+<h2>Tourist Map</h2>
+
+<img src="map.jpg">
+
+</section>
+
+<!-- HOTELS -->
+
+<section id="hotels">
+
+<h2>Hotels & Stay</h2>
+
+<div class="hotels">
+
+<div class="hotel-card">
+<img src="hotel1.jpg">
+<h3>Hill View Resort</h3>
+</div>
+
+<div class="hotel-card">
+<img src="hotel2.jpg">
+<h3>Nilgiri Palace Hotel</h3>
+</div>
+
+<div class="hotel-card">
+<img src="hotel3.jpg">
+<h3>Green Valley Stay</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- BOOKING -->
+
+<section id="booking">
+
+<h2>Book Your Trip</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<select>
+<option>Select Tour Package</option>
+<option>1 Day Ooty Tour</option>
+<option>2 Days Nilgiris Tour</option>
+<option>3 Days Hill Adventure</option>
+</select>
+
+<input type="date">
+
+<input type="number" placeholder="Number of People">
+
+<button onclick="alert('Thank you for booking your Ooty trip! We will contact you soon.')">
+Book Now
+</button>
+
+</form>
+
+</section>
+<h2><center>Visitor Reviews</center></h2>
+
+<div class="reviews">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Ooty is one of the most beautiful hill stations I have visited.</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐
+<p>The toy train ride through the mountains was unforgettable.</p>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>The tea plantations and cool weather make Ooty magical.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea rows="4" placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 Ooty Tourism Website | College Project</p>
+
+</footer>
+
+</body>
+</html>
